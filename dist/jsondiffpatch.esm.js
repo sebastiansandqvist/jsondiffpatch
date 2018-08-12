@@ -2712,4 +2712,3 @@ function clone$1() {
 }
 
 export { DiffPatcher, index as formatters, console$1 as console, create, dateReviver, diff, patch, unpatch, reverse, clone$1 as clone };
-//# sourceMappingURL=jsondiffpatch.esm.js.map
