@@ -905,7 +905,7 @@ function matchItems(array1, array2, index1, index2, context) {
     return false;
   }
   var objectHash = context.objectHash || function(obj) {
-    return obj.id || JSON.strinfigy(obj);
+    return obj.id || JSON.stringify(obj);
   };
   if (!objectHash) {
     // no way to match objects was provided, try match by position
