@@ -904,9 +904,7 @@ function matchItems(array1, array2, index1, index2, context) {
   if ((typeof value1 === 'undefined' ? 'undefined' : _typeof(value1)) !== 'object' || (typeof value2 === 'undefined' ? 'undefined' : _typeof(value2)) !== 'object') {
     return false;
   }
-  var objectHash = context.objectHash || function(obj) {
-    return obj.id || JSON.stringify(obj);
-  };
+  var objectHash = context.objectHash;
   if (!objectHash) {
     // no way to match objects was provided, try match by position
     return context.matchByPosition && index1 === index2;
